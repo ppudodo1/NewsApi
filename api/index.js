@@ -487,7 +487,7 @@ const main = async () => {
 
   await browser.close();
 };
-cron.schedule("* * */12 * * *", () => {
+cron.schedule("*/5 * * * * *", () => {
   main();
 });
 
